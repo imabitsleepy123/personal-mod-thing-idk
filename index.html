@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>STARZ MODS</title>
+<title>Sleepy Mods - Bonelab TCC</title>
 <style>
-body { background: #0a0a0a; color: white; font-family: Arial; text-align: center; padding: 20px; }
-h1 { color: #ff0000; font-size: 50px; }
-.mod { background: #1a1a1a; margin: 15px auto; padding: 20px; border-radius: 15px; max-width: 600px; }
-button { background: #ff0000; color: white; padding: 12px 25px; font-size: 18px; border: none; border-radius: 8px; cursor: pointer; }
+body { background: #0f0f0f; color: #ddd; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+header { background: #1a1a1a; padding: 20px; text-align: center; border-bottom: 3px solid #ff0000; }
+h1 { color: #ff0000; margin: 0; }
+.search { width: 60%; padding: 12px; margin: 20px auto; display: block; background: #222; color: white; border: none; border-radius: 8px; }
+.mod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 30px auto; }
+.mod { background: #1a1a1a; padding: 20px; border-radius: 12px; border: 1px solid #333; }
+.mod h2 { color: #ff4444; margin-top: 0; }
+button { background: #ff0000; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; }
 button:hover { background: #cc0000; }
 </style>
 </head>
 <body>
-<h1>STARZ MODS</h1>
-<p>Private TCC Collection</p>
 
-<div class="mod">
-<h2>Brenton Tarrant Avatar</h2>
-<button onclick="window.location='https://github.com/YOURUSERNAME/personal-mod-thing-idk/raw/main/mods/brentontarrant.zip'">Subscribe</button>
+<header>
+<h1>SLEEPY MODS</h1>
+<p>Private Bonelab TCC Collection</p>
+</header>
+
+<input type="text" class="search" placeholder="Search mods..." onkeyup="searchMods()">
+
+<div class="mod-grid" id="modGrid">
+  <div class="mod">
+    <h2>Brenton Tarrant Avatar</h2>
+    <p>TCC Style Avatar</p>
+    <button onclick="window.location='https://github.com/cmcarroll2011-sudo/personal-mod-thing-idk/raw/main/mods/brentontarrant.zip'">Subscribe</button>
+  </div>
+  
+  <!-- Add more mods here -->
 </div>
+
+<script>
+function searchMods() {
+  // Simple search later
+}
+</script>
 
 </body>
 </html>
